@@ -1,0 +1,24 @@
+//
+// Copyright (C) 2021 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_static {
+    name: "libinit_samsung_a34x",
+    srcs: [
+        "libinit_variant.cpp",
+        "libinit_utils.cpp",
+    ],
+    whole_static_libs: ["libbase"],
+    export_include_dirs: ["include"],
+    recovery_available: true,
+}
+
+cc_library_static {
+    name: "init_samsung_a34x",
+    srcs: ["init_samsung_a34x.cpp"],
+    whole_static_libs: ["libinit_samsung_a34x"],
+    include_dirs: ["system/core/init"],
+    recovery_available: true,
+}

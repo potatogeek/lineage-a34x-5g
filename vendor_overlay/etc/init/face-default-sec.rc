@@ -1,0 +1,9 @@
+#service sec-biometrics-face-aidl /vendor/bin/hw/vendor.samsung.hardware.biometrics.face.jdm-service
+#    class hal # class late_start
+#    user system
+#    group system input uhid
+
+
+#on post-fs-data
+#    mkdir /vendor/app/anc_face_unlock 0775 root system
+#    mkdir /data/vendor/anc_face_unlock 0775 root system
