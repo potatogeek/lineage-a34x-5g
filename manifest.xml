@@ -248,3 +248,12 @@
         <fqname>@3.1::ISehSupplicant/default</fqname>
     </hal>
 </manifest>
+<hal format="hidl">
+    <name>android.hardware.foo</name>
+    <transport>hwbinder</transport>
+    <version>1.2</version>
+    <interface>
+        <name>IFoo</name>
+        <instance>default</instance>
+    </interface>
+</hal>
