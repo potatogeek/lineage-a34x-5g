@@ -126,4 +126,7 @@ $(call inherit-product, vendor/samsung/a34x/a34x-vendor.mk)
 
 # Inherit the sign keys
 #$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
+PRODUCT_PACKAGES += \
+    treble-overlay-samsung-a34 \
+    treble-overlay-samsung-a34-systemui
 
