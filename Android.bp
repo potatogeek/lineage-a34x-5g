@@ -6,30 +6,3 @@
 
 soong_namespace {
 }
-prebuilt_apk {
-    name: "treble-overlay-samsung-a34",
-    src: "system/product/overlay/treble-overlay-samsung-a34.apk",
-    filename: "treble-overlay-samsung-a34.apk",
-    certificate: "platform",           // assinatura de plataforma
-    privileged: false,
-    overlay: true,                     // marca como static RRO
-    target: {
-        android: {
-            enabled: true,
-        },
-    },
-}
-
-prebuilt_apk {
-    name: "treble-overlay-samsung-a34-systemui",
-    src: "system/product/overlay/treble-overlay-samsung-a34-systemui.apk",
-    filename: "treble-overlay-samsung-a34-systemui.apk",
-    certificate: "platform",
-    privileged: false,
-    overlay: true,
-    target: {
-        android: {
-            enabled: true,
-        },
-    },
-}
