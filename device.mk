@@ -115,7 +115,7 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/samsung_ext
+    hardware/samsung
 
 # VNDK API
 PRODUCT_TARGET_VNDK_VERSION := 31
@@ -125,7 +125,7 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 31
 $(call inherit-product, vendor/samsung/a34x/a34x-vendor.mk)
 
 # Inherit the sign keys
-#$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
+$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
 PRODUCT_COPY_FILES += \
     device/samsung/a34x/system/product/overlay/treble-overlay-samsung-a34.apk:system/product/overlay/treble-overlay-samsung-a34.apk \
     device/samsung/a34x/system/product/overlay/treble-overlay-samsung-a34-systemui.apk:system/product/overlay/treble-overlay-samsung-a34-systemui.apk
