@@ -125,6 +125,10 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 31
 AB_OTA_UPDATER := false
 PRODUCT_SOONG_NAMESPACES += bootable/deprecated-ota
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/a34x/a34x-vendor.mk)
 
