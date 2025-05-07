@@ -31,7 +31,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration.xml \
     $(DEVICE_PATH)/bluetooth/audio/config/sysbta_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysbta_audio_policy_configuration_7_0.xml
 
-# Boot animation 
+# Boot animation
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
@@ -58,13 +58,13 @@ PRODUCT_PACKAGES += \
 
 # MTK
 PRODUCT_PACKAGES += \
-    MtkInCallService 
+    MtkInCallService
 
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlay_a34x \
     SystemUIOverlay_a34x
-    
+
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
@@ -104,7 +104,7 @@ PRODUCT_PACKAGES += \
     meta_init.vendor.rc \
     multi_init.rc \
     init.recovery.mt6877.rc \
-    init.recovery.samsung.rc 
+    init.recovery.samsung.rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6877:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6877
