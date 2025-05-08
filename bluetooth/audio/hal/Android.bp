@@ -1,6 +1,6 @@
 cc_binary {
     name: "android.hardware.bluetooth.audio-service-system",
-    vintf_fragments: ["bluetooth_audio_system.xml"],
+    vintf_fragment_modules: ["bluetooth_audio_system.xml"],
     init_rc: ["android.hardware.bluetooth.audio-service-system.rc"],
     relative_install_path: "hw",
     srcs: [
