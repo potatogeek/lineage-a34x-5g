@@ -1992,7 +1992,6 @@ vendor/etc/fstab.ramplus
 vendor/etc/fstb.cfg
 vendor/etc/gbe.cfg
 vendor/etc/hqm_device.xml
-vendor/etc/linker.config.pb
 vendor/etc/mercury.json
 vendor/etc/mkshrc
 vendor/etc/mtk_omx_core.cfg
