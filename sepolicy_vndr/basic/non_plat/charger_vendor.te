@@ -1,0 +1,4 @@
+allow charger_vendor gpu_device:dir search;
+allow charger_vendor dri_device:chr_file rw_file_perms;
+allow charger_vendor graphics_device:dir search;
+allow charger_vendor graphics_device:chr_file rw_file_perms;
