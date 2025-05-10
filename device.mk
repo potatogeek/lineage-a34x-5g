@@ -131,3 +131,5 @@ PRODUCT_COPY_FILES += \
     device/samsung/a34x/system/product/overlay/treble-overlay-samsung-a34-systemui.apk:system/product/overlay/treble-overlay-samsung-a34-systemui.apk
 
 BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    $(LOCAL_PATH)/compatibility_matrix.xml
