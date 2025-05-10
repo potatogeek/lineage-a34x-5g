@@ -21,12 +21,6 @@ TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := generic
 TARGET_CPU_VARIANT_RUNTIME := cortex-a55
 
-TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv7-a-neon
-TARGET_2ND_CPU_ABI := armeabi-v7a
-TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := generic
-TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
@@ -181,5 +175,6 @@ TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_DEADLINE := false
 
 # Inherit the proprietary files
 include vendor/samsung/a34x/BoardConfigVendor.mk
-
-
+#remove 32bits
+TARGET_SUPPORTS_64_BIT_APPS := true
+TARGET_SUPPORTS_32_BIT_APPS := false
