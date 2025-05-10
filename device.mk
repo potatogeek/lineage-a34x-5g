@@ -130,6 +130,10 @@ $(call inherit-product, vendor/samsung/a34x/a34x-vendor.mk)
 PRODUCT_COPY_FILES += \
     device/samsung/a34x/system/product/overlay/treble-overlay-samsung-a34.apk:system/product/overlay/treble-overlay-samsung-a34.apk \
     device/samsung/a34x/system/product/overlay/treble-overlay-samsung-a34-systemui.apk:system/product/overlay/treble-overlay-samsung-a34-systemui.apk
+
+# Update
+AB_OTA_UPDATER := false
+PRODUCT_SOONG_NAMESPACES += bootable/deprecated-ota
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
