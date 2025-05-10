@@ -127,9 +127,6 @@ $(call inherit-product, vendor/samsung/a34x/a34x-vendor.mk)
 
 # Inherit the sign keys
 #$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
-PRODUCT_COPY_FILES += \
-    device/samsung/a34x/system/product/overlay/treble-overlay-samsung-a34.apk:system/product/overlay/treble-overlay-samsung-a34.apk \
-    device/samsung/a34x/system/product/overlay/treble-overlay-samsung-a34-systemui.apk:system/product/overlay/treble-overlay-samsung-a34-systemui.apk
 
 # Update
 AB_OTA_UPDATER := false
