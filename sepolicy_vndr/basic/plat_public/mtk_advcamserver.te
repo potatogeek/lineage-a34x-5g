@@ -1,8 +1,0 @@
-# ==============================================
-# Policy File of /system/bin/mtk_advcamserver Executable File
-
-# ==============================================
-# Type Declaration
-# ==============================================
-
-type mtk_advcamserver, domain;

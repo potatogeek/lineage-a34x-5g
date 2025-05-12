@@ -1,4 +1,0 @@
-# ==============================================
-# Policy File of /system/priv-app/RsuService/RsuService.apk Executable File
-
-type rsu_app, domain;

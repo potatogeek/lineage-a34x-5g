@@ -1,5 +1,0 @@
-# ==============================================
-# Common SEPolicy Rule
-# ==============================================
-
-allow uncrypt uncrypt:capability fowner;

@@ -1,8 +1,0 @@
-# ==============================================
-# Policy File of /system/bin/camerapostalgo Executable File
-
-# ==============================================
-# Type Declaration
-# ==============================================
-
-type camerapostalgo, domain;

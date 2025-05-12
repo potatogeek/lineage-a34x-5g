@@ -1,8 +1,0 @@
-# ==============================================
-# Policy File of /system/priv-app/CapabilityTest/CapabilityTest.apk Executable File
-
-# ==============================================
-# Type Declaration
-# ==============================================
-
-type capability_app, domain, coredomain;

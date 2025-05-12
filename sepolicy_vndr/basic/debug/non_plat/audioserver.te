@@ -1,3 +1,0 @@
-# Date : WK16.48
-# Purpose: Allow to trigger AEE dump
-allow audioserver crash_dump:unix_stream_socket connectto;

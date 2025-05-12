@@ -1,2 +1,0 @@
-#For Kryptowire mtklog issue
-allow mtkrild aee_aedv:unix_stream_socket connectto;

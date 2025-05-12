@@ -1,9 +1,0 @@
-# ==============================================
-# Policy File of /system/bin/vtservice Executable File
-
-# ==============================================
-# Common SEPolicy Rule
-# ==============================================
-
-# TODO: Should move to plat_private after split.
-type vtservice, domain;

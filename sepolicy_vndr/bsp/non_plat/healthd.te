@@ -1,5 +1,0 @@
-# ==============================================
-# Common SEPolicy Rule
-# ==============================================
-
-allow healthd sysfs_vcorefs_pwrctrl:file write;

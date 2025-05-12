@@ -1,6 +1,0 @@
-# ==============================================
-# Common SEPolicy Rule
-# ==============================================
-
-typealias hal_wifi_supplicant_default alias wpa;
-
