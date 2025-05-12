@@ -135,5 +135,9 @@ PRODUCT_SOONG_NAMESPACES += bootable/deprecated-ota
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
+# fcm
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(LOCAL_PATH)/compatibility_matrix.xml
+    $(DEVICE_PATH)/compatibility_matrix.xml  \
+    hardware/samsung/vintf/samsung_framework_compatibility_matrix.xml \
+    vendor/lineage/config/device_framework_matrix.xml \
+    hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml
