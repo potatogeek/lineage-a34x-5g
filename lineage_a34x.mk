@@ -18,10 +18,15 @@ $(call inherit-product, device/samsung/a34x/device.mk)
 PRODUCT_DEVICE := a34x
 PRODUCT_NAME := lineage_a34x
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-A346B
+PRODUCT_MODEL := SM-A346E
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
+
+
+# Sakura Stuff
+SAKURA_MAINTAINER := DarkKiller28 - Soner
+TARGET_BOOT_ANIMATION_RES := 1080
 
 
 

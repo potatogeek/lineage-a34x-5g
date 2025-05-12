@@ -1,0 +1,10 @@
+      bluetooth/bluetooth_audio_system.bp
+prebuilt_etc {
+    name: "bluetooth_audio_system_xml",
+    src: "bluetooth_audio_system.xml",
+    sub_dir: "vintf/manifest",
+    filename: "bluetooth_audio_system.xml",
+    installable: true,
+}
+
+

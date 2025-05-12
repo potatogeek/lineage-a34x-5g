@@ -38,8 +38,10 @@ TARGET_SCREEN_WIDTH := 1080
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images_vendor \
-    $(DEVICE_PATH)/init/init.sec-charger.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.sec-charger.rc \
     libsuspend
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/init/init.sec-charger.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.sec-charger.rc
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -136,3 +138,5 @@ $(call inherit-product, vendor/samsung/a34x/a34x-vendor.mk)
 # Inherit the sign keys
 #$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
 
+# Target Board
+TARGET_BOARD_PLATFORM := mt6877
