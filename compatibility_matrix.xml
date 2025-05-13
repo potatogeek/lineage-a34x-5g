@@ -9,6 +9,7 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.power</name>
+        <version>5</version>
         <interface>
             <name>IPower</name>
             <instance>default</instance>
@@ -16,6 +17,7 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.security.keymint</name>
+        <version>3</version>
         <interface>
             <name>IKeyMintDevice</name>
             <instance>default</instance>
@@ -41,6 +43,7 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.wifi.supplicant</name>
+	<version>3</version>
         <interface>
             <name>ISupplicant</name>
             <instance>default</instance>
@@ -48,6 +51,7 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.samsung.hardware.hyper</name>
+        <version>2</version>
         <interface>
             <name>ISehHyPer</name>
             <instance>default</instance>
@@ -55,6 +59,7 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.samsung.hardware.security.hdcp.wifidisplay</name>
+        <version>2</version>
         <interface>
             <name>ISehHdcp</name>
             <instance>default</instance>
@@ -96,13 +101,6 @@
         <version>2.0-1</version>
         <interface>
             <name>IBluetoothAudioProvidersFactory</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.cas</name>
-        <interface>
-            <name>IMediaCasService</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -563,34 +561,78 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
+    <hal format="hidl">
+        <name>android.hardware.foo</name>
+        <version>1.2</version>
+        <interface>
+            <name>IFoo</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <!-- Required AIDL HALs 
+    <hal format="aidl">
         <name>android.frameworks.schedulerservice</name>
-        <version>1.0</version>
+        <version>1</version>
+        <interface>
+            <name>ISchedulerService</name>
+            <instance>default</instance>
+        </interface>
     </hal>
-    <hal format="hidl" optional="false">
+
+    <hal format="aidl">
         <name>android.frameworks.sensorservice</name>
+        <version>1</version>
+        <interface>
+            <name>ISensorManager</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+
+    <hal format="aidl">
+        <name>android.system.wifi.keystore</name>
+        <version>1</version>
+        <interface>
+            <name>IKeystore</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+
+    <!-- Required HIDL HALs
+    <hal format="hidl">
+        <name>android.hidl.allocator</name>
         <version>1.0</version>
+        <interface>
+            <name>IAllocator</name>
+            <instance>ashmem</instance>
+        </interface>
     </hal>
-    <hal format="hidl" optional="false">
-      <name>android.hidl.allocator</name>
-      <version>1.0</version>
+
+    <hal format="hidl">
+        <name>android.hidl.manager</name>
+        <version>1.2</version>
+        <interface>
+            <name>IServiceManager</name>
+            <instance>default</instance>
+        </interface>
     </hal>
-    <hal format="hidl" optional="false">
-      <name>android.hidl.manager</name>
-      <version>1.0</version>
+
+    <hal format="hidl">
+        <name>android.hidl.memory</name>
+        <version>1.0</version>
+        <interface>
+            <name>IMemory</name>
+            <instance>ashmem</instance>
+        </interface>
     </hal>
-    <hal format="hidl" optional="false">
-      <name>android.hidl.memory</name>
-      <version>1.0</version>
-    </hal>
-    <hal format="hidl" optional="false">
-      <name>android.hidl.token</name>
-      <version>1.0</version>
-    </hal>
-    <hal format="hidl" optional="false">
-      <name>android.system.wifi.keystore</name>
-      <version>1.0</version>
-    </hal>
+
+    <hal format="hidl">
+        <name>android.hidl.token</name>
+        <version>1.0</version>
+        <interface>
+            <name>ITokenManager</name>
+            <instance>default</instance>
+        </interface>
+    </hal> -->
     <vendor-ndk>
       <version>31</version>
     </vendor-ndk>
