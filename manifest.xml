@@ -58,31 +58,9 @@
         <fqname>@1.0::IOmxStore/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.memtrack</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IMemtrack/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.renderscript</name>
         <transport arch="32+64">passthrough</transport>
         <fqname>@1.0::IDevice/default</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>android.hardware.security.keymint</name>
-        <fqname>IKeyMintDevice/default</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>android.hardware.security.secureclock</name>
-        <fqname>ISecureClock/default</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>android.hardware.security.sharedsecret</name>
-        <fqname>ISharedSecret/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.sensors</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.0::ISensors/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.tetheroffload.config</name>
@@ -120,10 +98,6 @@
         <name>vendor.mediatek.hardware.apmonitor</name>
         <transport>hwbinder</transport>
         <fqname>@2.0::IApmService/apm_hidl_service</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.mediatek.hardware.atci</name>
-        <transport>hwbinder</transport>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.bluetooth.audio</name>
@@ -248,13 +222,13 @@
         <transport>hwbinder</transport>
         <fqname>@3.1::ISehSupplicant/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>android.hardware.foo</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>IFoo</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </manifest>
-<hal format="hidl">
-    <name>android.hardware.foo</name>
-    <transport>hwbinder</transport>
-    <version>1.2</version>
-    <interface>
-        <name>IFoo</name>
-        <instance>default</instance>
-    </interface>
-</hal>
