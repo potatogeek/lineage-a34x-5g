@@ -1,0 +1,21 @@
+# MTK-SEC project .rc configure
+
+on init
+    #create mountpoint for /mnt/vendor/persist partition
+    mkdir /mnt/vendor/persist 0771 system system
+
+on post-fs
+    chown system system /mnt/vendor/persist
+    chmod 0771 /mnt/vendor/persist
+
+    # We restorecon /mnt/vendor/persist to set SEPolicy label.
+    restorecon /mnt/vendor/persist
+
+# For SEC persist service
+    mkdir /mnt/vendor/efs 0700 system system
+    restorecon /mnt/vendor/efs
+
+on post-fs-data
+    # Create /data/vendor/key_provisioning dir and get proper encryption policy installed
+    # Key Installation
+    mkdir /data/vendor/key_provisioning 0771 system system
